@@ -5,13 +5,11 @@ import com.gustavo.domain.dto.response.PropostaResponseDto;
 import com.gustavo.domain.ports.in.PropostaServicePort;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 
 import java.net.URI;
+import java.util.List;
 
 @RestController
 @RequestMapping("/proposta")
@@ -25,6 +23,11 @@ public class PropostaController {
         PropostaResponseDto response = servicePort.save(proposta);
 
         return ResponseEntity.created(getPathLocation(response.getId())).body(response);
+    }
+
+    @GetMapping
+    public ResponseEntity<List<PropostaResponseDto>> findAll(){
+        return ResponseEntity.ok(servicePort.findAll());
     }
 
     private URI getPathLocation(Long id) {
