@@ -1,4 +1,4 @@
-package com.gustavo.domain.dto.response;
+package com.gustavo.application.dto.response;
 
 public class PropostaResponseDto {
 
@@ -12,11 +12,12 @@ public class PropostaResponseDto {
     private int prazoPagamento;
     private Boolean aprovado;
     private String observacao;
+    private String valorSolicitadoFmt;
 
     public PropostaResponseDto() {
     }
 
-    public PropostaResponseDto(Long id, String nome, String sobrenome, String telefone, String cpf, Double renda, Double valorSolicitado, int prazoPagamento, Boolean aprovado, String observacao) {
+    public PropostaResponseDto(Long id, String nome, String sobrenome, String telefone, String cpf, Double renda, Double valorSolicitado, int prazoPagamento, Boolean aprovado, String observacao, String fmt) {
         this.id = id;
         this.nome = nome;
         this.sobrenome = sobrenome;
@@ -27,6 +28,7 @@ public class PropostaResponseDto {
         this.prazoPagamento = prazoPagamento;
         this.aprovado = aprovado;
         this.observacao = observacao;
+        this.valorSolicitadoFmt = fmt;
     }
 
     public Long getId() {
@@ -107,5 +109,13 @@ public class PropostaResponseDto {
 
     public void setObservacao(String observacao) {
         this.observacao = observacao;
+    }
+
+    public String getValorSolicitadoFmt() {
+        return valorSolicitadoFmt;
+    }
+
+    public void setValorSolicitadoFmt(String valorSolicitadoFmt) {
+        this.valorSolicitadoFmt = valorSolicitadoFmt;
     }
 }

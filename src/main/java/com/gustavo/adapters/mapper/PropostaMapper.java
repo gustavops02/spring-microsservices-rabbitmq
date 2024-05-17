@@ -4,6 +4,9 @@ import com.gustavo.adapters.persistence.model.PropostaEntity;
 import com.gustavo.adapters.persistence.model.UsuarioEntity;
 import com.gustavo.application.dto.request.PropostaRequestDto;
 import com.gustavo.application.dto.response.PropostaResponseDto;
+import com.gustavo.domain.model.Proposta;
+
+import java.text.NumberFormat;
 
 
 public class PropostaMapper {
@@ -38,8 +41,11 @@ public class PropostaMapper {
         dto.setPrazoPagamento(proposta.getPrazoPagamento());
         dto.setAprovado(proposta.getAprovada());
         dto.setObservacao(proposta.getObservacao());
+        dto.setValorSolicitadoFmt(valorFormatadoFmt(proposta.getValorSolicitado()));
         return dto;
     }
 
-
+    private static String valorFormatadoFmt(Double valor) {
+        return NumberFormat.getCurrencyInstance().format(valor);
+    }
 }
