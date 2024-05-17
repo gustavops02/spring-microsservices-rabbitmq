@@ -1,9 +1,9 @@
 package com.gustavo.adapters.persistence.repository.jpa;
 
 import com.gustavo.adapters.persistence.model.PropostaEntity;
-import com.gustavo.domain.dto.request.PropostaRequestDto;
-import com.gustavo.domain.dto.response.PropostaResponseDto;
-import com.gustavo.application.ports.out.PropostaRepositoryPort;
+import com.gustavo.application.dto.request.PropostaRequestDto;
+import com.gustavo.application.dto.response.PropostaResponseDto;
+import com.gustavo.domain.ports.out.PropostaRepositoryPort;
 import com.gustavo.infra.annotations.Adapter;
 import com.gustavo.adapters.mapper.PropostaMapper;
 import lombok.RequiredArgsConstructor;

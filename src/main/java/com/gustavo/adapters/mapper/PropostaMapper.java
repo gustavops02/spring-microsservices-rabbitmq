@@ -2,8 +2,8 @@ package com.gustavo.adapters.mapper;
 
 import com.gustavo.adapters.persistence.model.PropostaEntity;
 import com.gustavo.adapters.persistence.model.UsuarioEntity;
-import com.gustavo.domain.dto.request.PropostaRequestDto;
-import com.gustavo.domain.dto.response.PropostaResponseDto;
+import com.gustavo.application.dto.request.PropostaRequestDto;
+import com.gustavo.application.dto.response.PropostaResponseDto;
 
 
 public class PropostaMapper {

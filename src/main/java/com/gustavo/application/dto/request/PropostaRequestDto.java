@@ -1,4 +1,4 @@
-package com.gustavo.domain.dto.request;
+package com.gustavo.application.dto.request;
 
 import java.util.Objects;
 

@@ -1,8 +1,8 @@
 package com.gustavo.adapters.rest;
 
-import com.gustavo.domain.dto.request.PropostaRequestDto;
-import com.gustavo.domain.dto.response.PropostaResponseDto;
-import com.gustavo.application.ports.in.PropostaServicePort;
+import com.gustavo.application.dto.request.PropostaRequestDto;
+import com.gustavo.application.dto.response.PropostaResponseDto;
+import com.gustavo.domain.ports.in.PropostaServicePort;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
