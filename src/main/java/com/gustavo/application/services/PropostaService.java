@@ -1,9 +1,9 @@
-package com.gustavo.domain.services;
+package com.gustavo.application.services;
 
+import com.gustavo.application.ports.in.PropostaServicePort;
 import com.gustavo.domain.dto.request.PropostaRequestDto;
 import com.gustavo.domain.dto.response.PropostaResponseDto;
-import com.gustavo.domain.ports.in.PropostaServicePort;
-import com.gustavo.domain.ports.out.PropostaRepositoryPort;
+import com.gustavo.application.ports.out.PropostaRepositoryPort;
 
 import java.util.List;
 

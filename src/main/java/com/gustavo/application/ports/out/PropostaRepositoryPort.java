@@ -1,4 +1,4 @@
-package com.gustavo.domain.ports.out;
+package com.gustavo.application.ports.out;
 
 import com.gustavo.domain.dto.request.PropostaRequestDto;
 import com.gustavo.domain.dto.response.PropostaResponseDto;
