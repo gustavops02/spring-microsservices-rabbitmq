@@ -3,6 +3,11 @@
 ![RabbitMQ](https://img.shields.io/badge/Rabbitmq-FF6600?style=for-the-badge&logo=rabbitmq&logoColor=white)
 ![Docker](https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white)
 
+<br/>
+
+![Static Badge](https://img.shields.io/badge/status-em_andamento-blue)
+
+
 # Spring Microservices com RabbitMQ
 
 Este repositório contém um exemplo de aplicação com microserviços usando Spring Boot e RabbitMQ para comunicação assíncrona e usando Arquitetura Hexagonal.
