@@ -87,4 +87,4 @@ Você pode monitorar as mensagens e filas no painel do RabbitMQ:
 
 ## Contribuição
 
-Contribuições sã0 bem-vindas! Sinta-se à vontade para abrir issues e pull requests.
+Contribuições são bem-vindas! Sinta-se à vontade para abrir issues e pull requests.
